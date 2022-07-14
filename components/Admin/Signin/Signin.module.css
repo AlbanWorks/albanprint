@@ -1,0 +1,21 @@
+.Container{
+    width: 100%;
+    height: 100vh;
+    color: rgb(59, 59, 59);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg, var(--background), var(--backgroundLight));
+}
+.SubTitle{
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+.ButtonContainer{
+    width: 90%;
+    height: 40px;
+    max-width: 500px;
+    font-size: 16px;
+}
