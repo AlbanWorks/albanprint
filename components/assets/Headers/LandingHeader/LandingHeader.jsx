@@ -27,11 +27,11 @@ const LandingHeader = () => {
             </div>
             <div className={classes.Ancor}>
                 <Link href={`https://api.whatsapp.com/send?text=${"Hola, quiero hacer una consulta"}&phone=+54${3814015520}`}>
-                    <i class="fa-brands fa-whatsapp"></i>
+                    <i className="fa-brands fa-whatsapp"></i>
                 </Link>
             </div>
             <div className={classes.Ancor} onClick={()=> router.push("/")}>
-                    <i class="fa-solid fa-bag-shopping"></i>
+                    <i className="fa-solid fa-bag-shopping"></i>
             </div>
         </div>
     </header> 
