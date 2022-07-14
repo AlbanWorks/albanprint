@@ -1,4 +1,3 @@
-import Firestore from '../../firebase/FirebaseAdminConfig_deprecated'
 import { firestore} from '../../firebase/FirebaseAdminConfig2'
 import { cat_route } from '../../firebase/routes'
 
