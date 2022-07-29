@@ -15,7 +15,7 @@ const Header = () => {
                 <div className={classes.LogoContainer}><Logo logo={PublicInfo.Logo}/></div>
                 <h1 className={classes.Title} >{PublicInfo.StoreName}</h1>
                 <div className={classes.ShareButtonContainer}>
-                    <ShareButton/>
+                  
                 </div>
             </header>
             :

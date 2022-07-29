@@ -30,7 +30,7 @@ const LandingHeader = () => {
                     <i className="fa-brands fa-whatsapp"></i>
                 </Link>
             </div>
-            <div className={classes.Ancor} onClick={()=> router.push("/")}>
+            <div className={classes.Ancor} onClick={()=> router.push("/store")}>
                     <i className="fa-solid fa-bag-shopping"></i>
             </div>
         </div>
