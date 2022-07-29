@@ -14,10 +14,17 @@ export default function Hom() {
       </Head>
       <LandingHeader/>
       <Title/>
-      <About text={'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur suscipit nemo beatae saepe nihil, quasi corporis, perspiciatis maiores iusto fugiat incidunt quisquam. Repudiandae libero ipsa a asperiores quisquam aliquam dolor.'}/>
-      <Section title={"Tarjetas"} image={"/uros.png"}/>
-      <Section title={"Remeritas"} image={"/uros.png"}/>
-      <Section title={"Impresión 3D"} image={"/uros.png"}/>
+      <About 
+      title={'Diseñamos e imprmimos los diseños que necesitas.'}
+      subtitle={'Resolvemos las necesidades de negocios, fiestas y eventos, marcas personales, equipos deportivos y mucho mas.'}
+      />
+      <Section title={"Tarjetas"} image={"/tarjetas.jpg"}/>
+      <Section title={"Etiquetas Adhesivas"} image={"/etiquetas.jpg"}/>
+      <Section title={"Cajas"} image={"/cajas.jpg"}/>
+      <Section title={"Vinilos"} image={"/vinilos.jpg"}/>
+      <Section title={"Camisetas"} image={"/camisetas.jpg"}/>
+      <Section title={"Banderas"} image={"/banderas.jpg"}/>
+      <Section title={"Impresión 3D"} image={"/cajas.jpg"}/>
     </div>
   )
 }

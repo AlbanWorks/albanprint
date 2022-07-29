@@ -1,11 +1,12 @@
 import React from 'react'
 import classes from './About.module.css'
 
-const About = ({text}) => {
+const About = ({title, subtitle}) => {
   return (
     <div className={classes.Container}>
         <p className={classes.About}>
-            {text}
+            {title} <br/><br/>
+            {subtitle}
         </p>
     </div>
   )
