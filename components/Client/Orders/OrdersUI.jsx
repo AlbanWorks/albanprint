@@ -14,12 +14,12 @@ const GatewayUI = () => {
     const [Indications, setIndications] = useState("") 
     const [OrderState, setOrderState] = useState({notSended:"orden aun no enviada"})
     const [Response, setResponse] = useState()  
-    const [DirectionTitle, setDirectionTitle] = useState("Dirección *")
+    const [DirectionTitle, setDirectionTitle] = useState("Nombre *")
     const router = useRouter() 
 
     useEffect(() => {
         setDirection(getLocalStorageValues("Direction"))
-        setIndications(getLocalStorageValues("Indications"))
+        setIndications('-')
     }, [])
 
     const InitSendingPorcess = async () =>{
@@ -44,9 +44,9 @@ const GatewayUI = () => {
     }
 
     const alertInputError= ()=>{
-        setDirectionTitle("Coloque una dirección válida 🢃")
+        setDirectionTitle("Coloque un nombre 🢃")
         setTimeout(() => {
-            setDirectionTitle("Dirección *")
+            setDirectionTitle("Nombre *")
         }, 2000);
     }
 
@@ -70,12 +70,6 @@ const GatewayUI = () => {
                             alCambiar={(target)=>{setDirection(target.value)}} 
                             error={false}
                         />
-                        <Input 
-                            Label={"Indicaciónes, ayudanos a encontrarte (opcional)"} 
-                            Value={Indications} 
-                            alCambiar={(target)=>{setIndications(target.value)}} 
-                            error={false}
-                        />
                     </div>
                     <div className={classes.Botonera} >
                         {
@@ -86,14 +80,14 @@ const GatewayUI = () => {
                             :null    
                         }
                         <div className={classes.ButtonContainer}>
-                            <Button text={"Volver"} variant={1} Click={()=>{router.push('/')}}/>
+                            <Button text={"Volver"} variant={1} Click={()=>{router.push('/store')}}/>
                         </div> 
                     </div>
                 </>)
                 :OrderState.waitingResponse ? null
                 :OrderState.ErrorResponse ? // ERROR EN LA RESPUESTA 
                     <div className={classes.ButtonContainer}>
-                        <Button text={"Volver"} variant={1} Click={()=>{router.push('/')}}/>
+                        <Button text={"Volver"} variant={1} Click={()=>{router.push('/store')}}/>
                     </div>
                 :null//RESPUESTA EXITOSA
                 }

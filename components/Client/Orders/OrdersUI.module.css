@@ -2,7 +2,6 @@
    width: 100%;
    display: flex;
    justify-content: center;
-   background-color:  var(--backgroundDark) ;
    min-height: 100vh;
 }
 .Container{

@@ -1,5 +1,4 @@
 .Container{
-    background-color: rgb(252, 252, 252);
     display: flex;
     align-items: center;
     margin-top: 40px;
@@ -21,11 +20,10 @@
 }
 .InfoTitle{
     margin:40px 15px 10px 15px;
-    color: rgb(80, 80, 80);
+    color: rgb(212, 212, 212);
     font-size: 20px;
     text-align: center;
 }
-
 
 .ErrorContainer{
     width: 100%;

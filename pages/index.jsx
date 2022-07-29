@@ -24,7 +24,7 @@ export default function Home() {
       <Section title={"Vinilos"} image={"/vinilos.jpg"}/>
       <Section title={"Camisetas"} image={"/camisetas.jpg"}/>
       <Section title={"Banderas"} image={"/banderas.jpg"}/>
-      <Section title={"Impresión 3D"} image={"/cajas.jpg"}/>
+      <Section title={"Impresión 3D"} image={"/3dprint.jpg"}/>
     </div>
   )
 }

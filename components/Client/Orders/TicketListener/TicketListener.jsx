@@ -14,17 +14,17 @@ return (
                 Danos algo de información antes de hacer tu pedido
             </h2>
             <p className={classes.Info}>
-                Si olvidaste algo podés <Link href="/">volver</Link> y revisar tu carrito. 
+                Si olvidaste algo podés volver y revisar tu carrito. 
             </p>
             <p className={classes.Info}>
-                se creará un mensaje de tu parte para el vendedor por Whatsapp, solo tienes que enviarlo y acordar la entrega de tus productos.
+                Se creará un mensaje de tu parte para nosotros por Whatsapp.
             </p>
         </div>
      ) 
      : OrderState.ErrorResponse ? (
         <div className={classes.ErrorContainer} >
             <p className={classes.ErrorMessage}>
-               Algo salió mal y tu pedido no se realizó, podés <Link href="/">volver</Link> e intentarlo de nuevo.<br /><br /> 
+               Algo salió mal y tu pedido no se realizó, podés <Link href="/store">volver</Link> e intentarlo de nuevo.<br /><br /> 
               Error: <b>{info.err}</b>
             </p>
             <i className={"fas fa-cogs"}></i>
